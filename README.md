@@ -7,11 +7,11 @@
 
 ![Architecture Diagram](diagrams/architecture-diagram.png)
 
-## 📋 Project Overview
+## Project Overview
 
 This project demonstrates a production-ready, highly available 3-tier web application architecture on AWS. The architecture is designed following AWS Well-Architected Framework principles, with emphasis on security, reliability, and cost optimization.
 
-## 🏗️ Architecture Components
+## Architecture Components
 
 ### VPC Configuration
 - **CIDR Block**: 10.0.0.0/16
@@ -44,7 +44,7 @@ This project demonstrates a production-ready, highly available 3-tier web applic
 - **Components**: Amazon RDS MySQL
 - **Access**: Only from Application Tier, no internet access
 
-## 🔐 Security Configuration
+## Security Configuration
 
 ### Security Groups
 
@@ -59,7 +59,7 @@ This project demonstrates a production-ready, highly available 3-tier web applic
 - Private subnets route outbound traffic through NAT Gateway
 - Database tier has no internet access (local routes only)
 
-## 🚀 Features
+## Features
 
 -  **High Availability**: Resources distributed across 2 Availability Zones
 -  **Security**: Multi-layer security with Security Groups and private subnets
@@ -68,7 +68,7 @@ This project demonstrates a production-ready, highly available 3-tier web applic
 -  **Cost Optimized**: Uses appropriate instance types and free tier eligible resources
 -  **Best Practices**: Follows AWS Well-Architected Framework
 
-## 📊 Traffic Flow
+## Traffic Flow
 
 ### Inbound User Request
 ```
@@ -80,7 +80,7 @@ Internet → IGW → Public Route Table → Web Server (Public Subnet) → App S
 App Server → Private Route Table → NAT Gateway → IGW → Internet
 ```
 
-## 💰 Cost Estimation
+## Cost Estimation
 
 Estimated monthly cost (ap-south-1 region):
 
@@ -96,7 +96,7 @@ Estimated monthly cost (ap-south-1 region):
 
 **Note**: NAT Gateway is the primary cost. For learning, you can use a single NAT Gateway (~$32/month) or NAT Instance (cheaper but manual management).
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - AWS Account
@@ -147,7 +147,7 @@ Estimated monthly cost (ap-south-1 region):
 ### Detailed Setup Guide
 See [docs/setup-guide.md](docs/setup-guide.md) for detailed step-by-step instructions.
 
-## 🧪 Testing
+## Testing
 
 ### Test Web Server Access
 ```bash
@@ -166,7 +166,7 @@ mysql -h <RDS-ENDPOINT> -P 3306 -u admin -p
 ping google.com
 ```
 
-## 📚 What I Learned
+## What I Learned
 
 - VPC design and subnet planning
 - Multi-AZ architecture for high availability
@@ -176,11 +176,11 @@ ping google.com
 - Route table configuration and traffic routing
 - AWS networking best practices
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 See [docs/troubleshooting.md](docs/troubleshooting.md) for common issues and solutions.
 
-## 📖 Resources
+## Resources
 
 - [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/)
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
@@ -190,11 +190,11 @@ See [docs/troubleshooting.md](docs/troubleshooting.md) for common issues and sol
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-## 📝 License
+## License
 
 This project is [MIT](LICENSE) licensed.
 
-## 👤 Author
+## Author
 
 **Pranav Soni**
 - GitHub: [@pranavsoni21](https://github.com/pranavsoni21)
