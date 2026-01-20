@@ -1,3 +1,8 @@
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
+![Architecture](https://img.shields.io/badge/Architecture-3--Tier-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 # AWS 3-Tier Web Application Architecture
 
 ![Architecture Diagram](diagrams/architecture-diagram.png)
